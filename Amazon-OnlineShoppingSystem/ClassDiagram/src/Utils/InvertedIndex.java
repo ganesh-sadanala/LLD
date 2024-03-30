@@ -33,4 +33,16 @@ class InvertedIndex{
     public List<Integer> searchByPriceRange(String priceRange) {
         return priceRangeIndex.getOrDefault(priceRange, Collections.emptyList());
     }
+
+    public List<Integer> searchByMultipleAttributes(String name, String category, String priceRange) {
+          List<Integer> nameResults = searchByName(name);
+          List<Integer> categoryResults = searchByCategory(category);
+          List<Integer> priceRangeResults = searchByPriceRange(priceRange);
+  
+          Set<Integer> intersectionResults = new HashSet<>(nameResults);
+          intersectionResults.retainAll(categoryResults);
+          intersectionResults.retainAll(priceRangeResults);
+  
+          return new ArrayList<>(intersectionResults);
+      }
 }
