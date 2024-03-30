@@ -1,10 +1,18 @@
 public class Product {
-    String productID;
+    int productID;
     String name;
     String description;
     double price;
-    ProductCategory category;
+    String category;
+    String priceRange;
     int availableItemCount;
+
+    public Product(int id, String name, String category, String priceRange) {
+        productID = id;
+        this.name = name;
+        this.category = category;
+        this.priceRange = priceRange;
+    }
 
     Account seller;
 
