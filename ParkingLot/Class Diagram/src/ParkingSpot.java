@@ -5,4 +5,16 @@ public abstract class ParkingSpot {
     public boolean isFree() {
         return isFree;
     }
+
+    private Vehicle vehicle;
+
+    public boolean assignVehicle(Vehicle vehicle){
+        this.vehicle=vehicle;
+        isFree=false;
+    }
+
+    public boolean removeVehicle(Vehicle vehicle){
+        this.vehicle=null;
+        isFree=true;
+    }
 }

@@ -5,7 +5,12 @@ public class DisplayBoard {
     Large largeSpot;
     MCSpot motorCycleSpot;
 
-    void showFreeSlot(){
+    public void showEmptySpotNumber(){
+        if(handicappedSpot.isFree){
 
+        }else{
+
+        }
+        // ...
     }
 }
