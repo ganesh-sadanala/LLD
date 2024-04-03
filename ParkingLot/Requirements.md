@@ -29,3 +29,17 @@ lot:
 12. The system should support a per-hour parking fee model. For example,
     customers have to pay $4 for the first hour, $3.5 for the second and third
     hours, and $2.5 for all the remaining hours.
+13. The system should decide the parking floor and parking spot in that floor for the incoming vehicle.
+
+##### To practice the various design patterns on ParkingLot
+##### Use Cases
+
+- Singleton Pattern: 
+  - Use case: Ensuring a single instance of the parking lot management system.
+  - The singleton pattern can be used to create a single instance of the parking lot controller, which coordinates the overall functioning of the parking lot.
+- Factory Pattern:
+  - Use case: Creating different types of parking spots (e.g., Large, handicapped, electric vehicle).
+  - The factory pattern can be used to encapsulate the creation logic for different types of parking spots, allowing for easy extensibility and maintenance.
+- Strategy Pattern:
+  - Use case: Implementing different pricing strategies for parking fees.
+  - The strategy pattern can be used to define various pricing algorithms (e.g., hourly, daily, monthly) and dynamically switch between them based on the parking duration or customer type.
