@@ -1,3 +1,3 @@
 public interface ParkingObserver {
-    void updateAvailableSpots(String parkingSpotType, int availableSpots);
+    void updateDisplayBoard(ParkingSpot spot);
 }

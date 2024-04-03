@@ -1,4 +1,4 @@
-public class DisplayBoard {
+public class DisplayBoard implements ParkingObserver{
     int id;
     Handicapped handicappedSpot;
     Compact compactSpot;
@@ -12,5 +12,14 @@ public class DisplayBoard {
 
         }
         // ...
+    }
+
+    public void updateDisplayBoard(ParkingSpot parkingSpot) {
+        switch(parkingSpot.getType()){
+            // Find available spot:
+            // Use Two HashMaps one for available and other for occuped to achieve in O(1) space
+
+        }
+        showEmptySpotNumber();
     }
 }

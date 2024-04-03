@@ -2,6 +2,8 @@ public abstract class ParkingSpot {
     int id;
     boolean isFree;
 
+    String type;
+
     public boolean isFree() {
         return isFree;
     }
@@ -16,5 +18,14 @@ public abstract class ParkingSpot {
     public boolean removeVehicle(Vehicle vehicle){
         this.vehicle=null;
         isFree=true;
+        return true;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getId() {
+        return id;
     }
 }

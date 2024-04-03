@@ -43,3 +43,7 @@ lot:
 - Strategy Pattern:
   - Use case: Implementing different pricing strategies for parking fees.
   - The strategy pattern can be used to define various pricing algorithms (e.g., hourly, daily, monthly) and dynamically switch between them based on the parking duration or customer type.
+- Observer Pattern:
+  - Use case: Notifying relevant components or systems about parking events.
+  - The observer pattern can be employed to notify other systems or components (e.g., display boards, mobile apps) when a parking spot becomes available or occupied.
+- 

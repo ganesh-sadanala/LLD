@@ -8,4 +8,5 @@ public class DailyPricingStrategy implements PricingStrategy{
     @Override
     public double calculateFee(int duration) {
         return duration * dailyRate;
+    }
 }
