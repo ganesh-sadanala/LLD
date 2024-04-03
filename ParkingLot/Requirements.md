@@ -46,4 +46,6 @@ lot:
 - Observer Pattern:
   - Use case: Notifying relevant components or systems about parking events.
   - The observer pattern can be employed to notify other systems or components (e.g., display boards, mobile apps) when a parking spot becomes available or occupied.
-- 
+- State Pattern:
+  - Use case: Managing the state of a parking spot (e.g., available, occupied, reserved).
+  - The state pattern can be used to represent and manage the different states of a parking spot, encapsulating the behavior associated with each state.
