@@ -23,3 +23,6 @@
 - Observer Pattern:
   - Use case: Establishing a one-to-many dependency between objects, where changes in one object trigger automatic notifications to its dependents.
   - Example: Notifying registered observers (e.g., order tracking system) when an order status changes.
+- Decorator Pattern:
+  - Use case: Dynamically adding new behaviors or responsibilities to an object without modifying its structure.
+  - Example: Applying discounts or taxes to a product's price using decorators.

@@ -7,6 +7,9 @@ public class Product {
     String priceRange;
     int availableItemCount;
 
+    public Product(){
+
+    }
     public Product(int id, String name, String category, String priceRange) {
         productID = id;
         this.name = name;
@@ -21,5 +24,13 @@ public class Product {
     }
     public boolean updatePrice(double newPrice){
         return false;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }
