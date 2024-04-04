@@ -26,3 +26,9 @@
 - Decorator Pattern:
   - Use case: Dynamically adding new behaviors or responsibilities to an object without modifying its structure.
   - Example: Applying discounts or taxes to a product's price using decorators.
+- Strategy Pattern:
+  - Use case: Encapsulating interchangeable algorithms or behaviors and making them interchangeable within a family of algorithms.
+  - Example: Implementing different shipping strategies (e.g., standard, express, international) that can be selected at runtime.
+- Adapter Pattern:
+  - Use case: Converting the interface of a class into another interface that clients expect, allowing incompatible interfaces to work together.
+  - Example: Using a PaymentAdapter to integrate a third-party payment gateway with the existing payment system.

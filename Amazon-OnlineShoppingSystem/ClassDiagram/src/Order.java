@@ -6,11 +6,17 @@ public class Order {
     OrderStatus status;
     Date orderDate;
 
+    ShippingStrategy shippingStrategy;
+
     List<OrderObserver> observers;
 
     public Order(String orderId) {
         this.orderId = orderId;
         this.status = OrderStatus.PENDING;
+    }
+
+    public void setShippingStrategy(ShippingStrategy shippingStrategy) {
+        this.shippingStrategy = shippingStrategy;
     }
 
     public void attach(OrderObserver observer) {
@@ -29,5 +35,9 @@ public class Order {
         for (OrderObserver observer : observers) {
             observer.update(this);
         }
+    }
+
+    void processOrder(){
+
     }
 }
