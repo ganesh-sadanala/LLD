@@ -17,3 +17,7 @@
 - Model-View-Controller (MVC Pattern)
   - Use case: Separating the user interface (View) from the business logic (Model) and the input handling (Controller).
   - Example: The product catalog page (View) displays the product information retrieved from the database (Model) based on user interactions (Controller).
+- Factory Pattern:
+  - Use case: Creating objects without explicitly specifying their exact class, allowing for flexibility and extensibility.
+  - Example: Using a PaymentGatewayFactory to create different payment gateway objects (e.g., PayPal, Stripe) based on the selected payment method.
+
