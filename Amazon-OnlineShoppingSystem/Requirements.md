@@ -9,3 +9,11 @@
 - Users should get notifications whenever there is a change in the order or shipping status.
 - Users should be able to pay through credit cards or electronic bank transfer.
 - Users should be able to track their shipment to see the current state of their order.
+
+
+#### Use Cases
+##### Different Design Patterns used for different use cases
+
+- Model-View-Controller (MVC Pattern)
+  - Use case: Separating the user interface (View) from the business logic (Model) and the input handling (Controller).
+  - Example: The product catalog page (View) displays the product information retrieved from the database (Model) based on user interactions (Controller).

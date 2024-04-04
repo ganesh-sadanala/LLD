@@ -1,3 +1,6 @@
+package Utils;
+import java.util.*;
+
 class InvertedIndex{
   Map<String, List<Integer>> nameIndex;
   Map<String, List<Integer>> categoryIndex;
