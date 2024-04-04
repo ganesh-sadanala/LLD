@@ -49,3 +49,6 @@ lot:
 - State Pattern:
   - Use case: Managing the state of a parking spot (e.g., available, occupied, reserved).
   - The state pattern can be used to represent and manage the different states of a parking spot, encapsulating the behavior associated with each state.
+- Abstract Factory Pattern:
+  - Use case: Creating families of related parking spot objects (e.g., compact spots, large spots, handicapped spots) for different parking floor configurations.
+  - The abstract factory pattern can be used to provide an interface for creating families of related parking spot objects without specifying their concrete classes. This allows for the creation of different parking floor configurations with varying types of parking spots, while encapsulating the creation logic within the respective factory classes. It promotes flexibility, extensibility, and loose coupling between the client code and the concrete parking spot implementations.
