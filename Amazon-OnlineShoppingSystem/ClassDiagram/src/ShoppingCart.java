@@ -1,6 +1,16 @@
 import java.util.List;
 
 public class ShoppingCart {
+
+    // singleton
+    static ShoppingCart shoppingCart;
+
+    private ShoppingCart(){}
+
+    static ShoppingCart getShoppingCart(){
+        if(shoppingCart==null) shoppingCart=new ShoppingCart();
+        return shoppingCart;
+    }
     private List<Item> items;
     private int cartId;
     public List<Item> getItems(){

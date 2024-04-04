@@ -20,4 +20,6 @@
 - Factory Pattern:
   - Use case: Creating objects without explicitly specifying their exact class, allowing for flexibility and extensibility.
   - Example: Using a PaymentGatewayFactory to create different payment gateway objects (e.g., PayPal, Stripe) based on the selected payment method.
-
+- Observer Pattern:
+  - Use case: Establishing a one-to-many dependency between objects, where changes in one object trigger automatic notifications to its dependents.
+  - Example: Notifying registered observers (e.g., order tracking system) when an order status changes.
