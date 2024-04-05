@@ -1,6 +1,7 @@
 import java.util.Date;
 import java.util.List;
 
+//Receiver
 public class Order {
     String orderId;
     OrderStatus status;

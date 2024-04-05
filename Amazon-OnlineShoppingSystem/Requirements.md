@@ -32,3 +32,6 @@
 - Adapter Pattern:
   - Use case: Converting the interface of a class into another interface that clients expect, allowing incompatible interfaces to work together.
   - Example: Using a PaymentAdapter to integrate a third-party payment gateway with the existing payment system.
+- Command Pattern:
+  - Use case: Encapsulating a request as an object, allowing parameterization, queueing, and logging of requests.
+  - Example: Implementing a command queue for order processing, where each order is encapsulated as a command object.
