@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class BookItem extends Book{
+public class BookItem extends Book implements LibraryItem{
     boolean isReferenceOnly;
     Date borrowed;
     Date dueDate;
@@ -9,4 +9,9 @@ public class BookItem extends Book{
     BookStatus status;
     Date dateOfPurchase;
     Rack placedAt;
+
+    @Override
+    public void displayInfo() {
+
+    }
 }
