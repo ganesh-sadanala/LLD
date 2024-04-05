@@ -11,6 +11,8 @@ public class Order {
 
     List<OrderObserver> observers;
 
+    Payment payment;
+
     public Order(String orderId) {
         this.orderId = orderId;
         this.status = OrderStatus.PENDING;
