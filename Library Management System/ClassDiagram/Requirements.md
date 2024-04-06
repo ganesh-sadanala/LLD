@@ -26,3 +26,7 @@
 - Factory Method Pattern:
   - Use case: Creating objects without specifying the exact class of the object to be created.
   - Example: Creating different types of library items (books, magazines, DVDs) based on a common interface.
+- Observer Pattern:
+  - Use case: Notifying multiple objects about changes in the state of another object.
+  - Example: Updating the display of available books when a book is borrowed or returned.
+
