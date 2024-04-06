@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.List;
 
-public interface Search {
+public interface LibraryCatalog {
     public List<BookItem> searchByTitle(String title);
     public List<BookItem> searchByAuthor(String author);
     public List<BookItem> searchBySubject(String subject);

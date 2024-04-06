@@ -1,13 +1,10 @@
 import java.util.Date;
 import java.util.List;
 
-public class Catalog implements LibraryCatalog {
-    private String []bookTitles;
-    private String []bookAuthors;
-    private String []bookSubjects;
-    private Date[]bookPublicationDates;
-
-
+public class CatalogProxy implements LibraryCatalog{
+    private Catalog realCatalog;
+    private String[] cachedResults;
+    private boolean isAuthenticated;
     @Override
     public List<BookItem> searchByTitle(String title) {
         return null;
@@ -26,5 +23,13 @@ public class Catalog implements LibraryCatalog {
     @Override
     public List<BookItem> searchByPubDate(Date publishDate) {
         return null;
+    }
+
+    private void cacheResults(String query) {
+        // Simulating caching of search results
+        cachedResults = new String[3];
+        cachedResults[0] = query;
+        cachedResults[1] = "Cached Book 1";
+        cachedResults[2] = "Cached Book 2";
     }
 }

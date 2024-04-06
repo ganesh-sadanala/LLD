@@ -29,4 +29,6 @@
 - Observer Pattern:
   - Use case: Notifying multiple objects about changes in the state of another object.
   - Example: Updating the display of available books when a book is borrowed or returned.
-
+- Command Pattern:
+  - Use case: Encapsulating a request as an object, allowing parameterization, queuing, and logging of requests.
+  - Example: Implementing undo/redo functionality for actions like adding or removing library items.
