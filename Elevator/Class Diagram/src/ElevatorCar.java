@@ -44,7 +44,6 @@ public class ElevatorCar {
         mediator.handleElevatorArrival(floor);
     }
 
-
     public void stop() {
         elevatorState = ElevatorState.Idle;
     }
