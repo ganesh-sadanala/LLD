@@ -27,3 +27,6 @@ passenger when the passenger calls the elevator car.
 - Command Pattern:
   - Use case: Encapsulating elevator requests (e.g., floor requests, door open/close requests) as objects.
   - The command pattern separates the request for an action from its execution, allowing requests to be queued, logged, or undone if needed.
+- Mediator Pattern:
+  - Use case: Facilitating communication and coordination between different components of the elevator system (e.g., floor controllers, elevator cars, scheduling system).
+  - The mediator pattern promotes loose coupling by encapsulating the interactions between objects, allowing them to communicate through a central mediator.

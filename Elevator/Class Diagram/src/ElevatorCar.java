@@ -8,6 +8,10 @@ public class ElevatorCar {
     ElevatorPanel elevatorPanel;
 
     ElevatorCommand elevatorCommand;
+
+    boolean available;
+
+    ElevatorMediator mediator;
     Display display;
 
     public void openDoor() {
@@ -25,6 +29,21 @@ public class ElevatorCar {
             currentFloor--;
         }
     }
+
+    public void moveToFloor(int floor) {
+        System.out.println("Elevator moving from floor " + currentFloor + " to floor " + floor);
+        currentFloor = floor;
+        available = false;
+        // Simulate elevator movement
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        available = true;
+        mediator.handleElevatorArrival(floor);
+    }
+
 
     public void stop() {
         elevatorState = ElevatorState.Idle;
