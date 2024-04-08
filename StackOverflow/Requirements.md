@@ -39,3 +39,8 @@
     - The Command pattern can be used to encapsulate each user action as an object, separating the request from its execution.
     - This enables the parameterization of clients with different requests and supports undoable operations.
     - For example, when a user posts a question, a PostQuestionCommand can be created and executed, and if needed, an UndoPostQuestionCommand can be used to revert the action.
+- Template Method Pattern:
+  - Use case: Handling the workflow of creating and publishing a question or answer.
+    - StackOverflow follows a specific workflow when a user creates and publishes a question or answer.
+    - The Template Method pattern can be used to define the skeleton of the workflow in a base class, while allowing subclasses to override or provide specific implementations for certain steps.
+    - For example, a QuestionWorkflow template method can define the overall steps involved in creating and publishing a question, such as validation, tagging, and notification. Subclasses can provide specific implementations for each step based on the type of question (e.g., programming question, meta question).
