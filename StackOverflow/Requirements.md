@@ -28,3 +28,14 @@
   - StackOverflow has features like badges and privileges that enhance or modify the behavior of user accounts.
   - The Decorator pattern allows for the dynamic addition of responsibilities to objects without modifying their core structure.
   - It can be used to add additional functionality or behavior to user accounts based on their achievements or roles.
+- Composite Pattern:
+  - Use case: Representing a hierarchical structure of questions and answers.
+    - StackOverflow organizes questions and their associated answers in a hierarchical manner.
+    - The Composite pattern can be used to treat individual questions and answers as well as groups of questions and answers uniformly.
+    - This allows for easier manipulation and traversal of the question-answer hierarchy.
+- Command Pattern:
+  - Use case: Implementing user actions and undo/redo functionality.
+    - StackOverflow allows users to perform various actions, such as posting questions, answering, commenting, and voting.
+    - The Command pattern can be used to encapsulate each user action as an object, separating the request from its execution.
+    - This enables the parameterization of clients with different requests and supports undoable operations.
+    - For example, when a user posts a question, a PostQuestionCommand can be created and executed, and if needed, an UndoPostQuestionCommand can be used to revert the action.
