@@ -44,3 +44,9 @@
     - StackOverflow follows a specific workflow when a user creates and publishes a question or answer.
     - The Template Method pattern can be used to define the skeleton of the workflow in a base class, while allowing subclasses to override or provide specific implementations for certain steps.
     - For example, a QuestionWorkflow template method can define the overall steps involved in creating and publishing a question, such as validation, tagging, and notification. Subclasses can provide specific implementations for each step based on the type of question (e.g., programming question, meta question).
+- Mediator Pattern:
+  - Use case: Managing communication between different components of the application.
+    - StackOverflow has various components, such as the question page, answer section, comment section, and user profile.
+    - The Mediator pattern can be used to encapsulate the communication and interaction between these components.
+    - Instead of components directly communicating with each other, they communicate through a mediator object, which simplifies the dependencies and makes the system more maintainable.
+    - For example, when a new answer is posted, the AnswerMediator can handle the communication between the answer component, the question component (to update the answer count), and the notification component (to send notifications to relevant users).

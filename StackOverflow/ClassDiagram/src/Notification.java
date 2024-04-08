@@ -1,2 +1,2 @@
-public class Notification {
+public class Notification extends Component{
 }
