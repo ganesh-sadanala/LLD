@@ -3,6 +3,11 @@ public class AddItemCommand implements LibraryCommand{
     LibraryManager libraryManager;
     private String itemName;
 
+    AddItemCommand(LibraryManager libraryManager, String itemName){
+        this.libraryManager=libraryManager;
+        this.itemName=itemName;
+    }
+
     @Override
     public void execute() {
         libraryManager.addItem(itemName);

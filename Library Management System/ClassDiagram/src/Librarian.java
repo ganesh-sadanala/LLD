@@ -1,5 +1,5 @@
 public class Librarian {
-    public boolean addBookItem(BookItem bookItem){
+    public boolean addBookItem(Book bookItem){
         return false;
     }
     public boolean blockMember(Member member){

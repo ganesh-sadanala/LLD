@@ -48,6 +48,13 @@ public class ElevatorCar {
         elevatorState = ElevatorState.Idle;
     }
 
+    public int getCurrentFloor(){
+        return currentFloor;
+    }
+
+    public boolean isAvailable(){
+        return available;
+    }
     void moveUp(){}
     void moveDown(){}
     void idle(){}

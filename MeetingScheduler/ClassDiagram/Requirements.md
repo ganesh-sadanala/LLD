@@ -17,3 +17,6 @@ and time, as well as to schedule or cancel meetings
 - Composite Pattern:
   - Use case: Representing a hierarchical structure of meetings, such as a series of related meetings or meetings with sub-meetings.
   - The Composite pattern composes objects (meetings) into tree structures to represent part-whole hierarchies.
+- Template Method Pattern:
+  - Use case: Defining a common structure for the scheduling process while allowing subclasses to override or specialize certain steps.
+  - The Template Method pattern defines the skeleton of an algorithm (scheduling process) in a method, deferring some steps to subclasses.

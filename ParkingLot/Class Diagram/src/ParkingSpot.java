@@ -46,9 +46,8 @@ public abstract class ParkingSpot {
         return true;
     }
 
-    public String getType() {
-        return type;
-    }
+
+    public abstract String getType();
 
     public int getId() {
         return id;

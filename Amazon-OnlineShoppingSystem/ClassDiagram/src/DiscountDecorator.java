@@ -1,8 +1,9 @@
 public class DiscountDecorator extends ProductDecorator{
     private double discountPercentage;
 
-    public DiscountDecorator(Product product){
+    public DiscountDecorator(Product product, double discountPercentage){
         super(product);
+        this.discountPercentage=discountPercentage;
     }
 
     public double getPrice() {

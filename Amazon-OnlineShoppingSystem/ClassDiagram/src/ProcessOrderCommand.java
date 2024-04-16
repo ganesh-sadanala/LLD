@@ -9,6 +9,9 @@ public class ProcessOrderCommand implements OrderCommand{
     }
     @Override
     public void execute() {
-
+        // Process the order
+        System.out.println("Processing order: " + order.getOrderId());
+        System.out.println("Amount: $" + order.getAmount());
+        // Additional order processing logic...
     }
 }

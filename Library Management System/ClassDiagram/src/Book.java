@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public abstract class Book {
+public class Book implements LibraryItem{
     private String title;
     private Author []author;
     private Date publicationDate;
@@ -11,4 +11,14 @@ public abstract class Book {
     private String subject;
     private String publisher;
 
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Book: " + title + " by " + author);
+    }
 }

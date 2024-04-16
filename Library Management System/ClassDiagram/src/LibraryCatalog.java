@@ -2,8 +2,8 @@ import java.util.Date;
 import java.util.List;
 
 public interface LibraryCatalog {
-    public List<BookItem> searchByTitle(String title);
-    public List<BookItem> searchByAuthor(String author);
-    public List<BookItem> searchBySubject(String subject);
-    public List<BookItem> searchByPubDate(Date publishDate);
+    public List<Book> searchByTitle(String title);
+    public List<Book> searchByAuthor(String author);
+    public List<Book> searchBySubject(String subject);
+    public List<Book> searchByPubDate(Date publishDate);
 }

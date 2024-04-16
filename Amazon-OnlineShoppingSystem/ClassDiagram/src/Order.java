@@ -5,6 +5,9 @@ import java.util.List;
 public class Order {
     String orderId;
     OrderStatus status;
+
+    private String item;
+    private double weight;
     Date orderDate;
 
     ShippingStrategy shippingStrategy;
@@ -41,6 +44,8 @@ public class Order {
     }
 
     void processOrder(){
-
+        shippingStrategy.ship(item);
+        double shippingCost = shippingStrategy.calculateShippingCost(weight);
+        System.out.println("Shipping Cost: $" + shippingCost);
     }
 }

@@ -1,10 +1,10 @@
 import java.util.List;
+import java.util.PriorityQueue;
 
 // Shortest Seek Time First algorithm
 // Greedy
 // May cause starvation
 public class SSTF implements SchedulingStrategy{
-
 
     // Bruteforce
     public int selectNextFloor(int currentFloor, List<Integer> requestedFloors) {
@@ -25,7 +25,7 @@ public class SSTF implements SchedulingStrategy{
 
 
 
-    // optimized but tradeoff: extra space(everytime create new Heap)
+    // Optimization, tradeoff: extra space(everytime create new Heap)
     public void requestFloor(int floor) {
         requestedFloors.offer(floor);
     }
@@ -33,7 +33,7 @@ public class SSTF implements SchedulingStrategy{
     private int currentFloor;
     private PriorityQueue<Integer> requestedFloors;
 
-    public Elevator() {
+    public SSTF() {
         this.currentFloor = 1;
         this.requestedFloors = new PriorityQueue<>(
                 (a, b) -> Math.abs(a - currentFloor) - Math.abs(b - currentFloor)
@@ -54,6 +54,7 @@ public class SSTF implements SchedulingStrategy{
         }
     }
 
-
-
+    private void moveToFloor(int floor) {
+        System.out.println("Elevator moving from floor " + currentFloor + " to floor " + floor);
+    }
 }

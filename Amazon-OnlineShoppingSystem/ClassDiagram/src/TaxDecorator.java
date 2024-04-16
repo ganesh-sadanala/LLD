@@ -1,8 +1,9 @@
 public class TaxDecorator extends ProductDecorator{
     private double taxPercentage;
 
-    public TaxDecorator(Product product){
+    public TaxDecorator(Product product, double taxPercentage){
         super(product);
+        this.taxPercentage=taxPercentage;
     }
 
     public double getPrice() {

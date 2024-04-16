@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ElevatorScheduler implements ElevatorMediator{
@@ -31,7 +32,12 @@ public class ElevatorScheduler implements ElevatorMediator{
 
     @Override
     public void handleElevatorArrival(int floor) {
-
+       for(FloorController floorController: floorControllers){
+           if(floorController.getFloor() == floor){
+               floorController.notifyElevatorArrival();
+               break;
+           }
+       }
     }
 
     private ElevatorCar findNearestAvailableCar(int floor) {

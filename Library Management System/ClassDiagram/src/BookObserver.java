@@ -1,3 +1,3 @@
 public interface BookObserver {
-    void update();
+    void update(String bookTitle, int availableCount);
 }

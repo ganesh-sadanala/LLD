@@ -1,7 +1,8 @@
 public class CommandUp implements ElevatorCommand{
-    ElevatorCar elevatorCar;
+    HallPanel hallPanel;
+
     @Override
     public void execute() {
-        elevatorCar.moveUp();
+        hallPanel.up();
     }
 }
