@@ -7,6 +7,10 @@ public class VendingMachine {
     private List<Rack> racks;
     private List<Integer> availableRacks;
 
+    public void setState(State state) {
+        this.state = state;
+    }
+
     public void insertMoney(double money){
         state.insertMoney();
     }
@@ -33,5 +37,9 @@ public class VendingMachine {
 
     public void refundFullMoney(){
         returnChange(money);
+    }
+
+    void setMoney(int money){
+        this.money=money;
     }
 }

@@ -1,5 +1,5 @@
 public class TicketAgent {
-    boolean createBooking(ShowTime showTime) {
+    boolean createBooking(MovieShow showTime) {
         return false;
     }
 }

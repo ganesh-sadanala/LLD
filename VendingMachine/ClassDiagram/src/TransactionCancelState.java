@@ -1,6 +1,12 @@
-public class NoMoneyInsertedState implements State{
+public class TransactionCancelState implements State{
+    VendingMachine vendingMachine;
+
+    TransactionCancelState(VendingMachine vendingMachine){
+        this.vendingMachine=vendingMachine;
+    }
+
     @Override
-    public void insertMoney() {
+    public void insertMoney(int money) {
 
     }
 

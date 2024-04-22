@@ -7,5 +7,5 @@ public class Movie {
     Date releaseDate;
     String language;
     int duration;
-    List<ShowTime> shows;
+    List<MovieShow> shows;
 }

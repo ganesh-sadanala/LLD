@@ -6,7 +6,7 @@ private int paymentId;
     private PaymentStatus status;
     private Date timestamp;
 
-    public boolean makePayment() {
+    boolean makePayment() {
         return false;
     }
 }

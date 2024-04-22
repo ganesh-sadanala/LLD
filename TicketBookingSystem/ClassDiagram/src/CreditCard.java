@@ -1,10 +1,9 @@
-public class CreditCard {
+public class CreditCard extends Payment{
     private String name;
     private String cardNumber;
     private String cvv;
-    private Address billingAddress;
 
-    boolean makePayment(float amount) {
+    boolean makePayment() {
         return false;
     }
 }

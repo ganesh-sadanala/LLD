@@ -1,5 +1,5 @@
 public interface State {
-    void insertMoney();
+    void insertMoney(int money);
     void dispenseProduct(int rackNumber);
     void pressButton(int rackNumber);
     void returnChange(int money);

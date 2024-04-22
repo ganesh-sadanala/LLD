@@ -1,4 +1,7 @@
-public class Customer {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer{
     List<Booking> bookingList;
 
     void createBooking(Booking booking) {

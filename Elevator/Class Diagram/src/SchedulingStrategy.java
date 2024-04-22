@@ -1,5 +1,10 @@
 import java.util.List;
 
 public interface SchedulingStrategy {
-    int selectNextFloor(int currentFloor, List<Integer> requestedFloors);
+    List<Integer> requestedFloors;
+    int selectNextFloor(int currentFloor);
+
+    void processRequests();
+
+     void requestFloor(int floor);
 }

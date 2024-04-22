@@ -6,8 +6,9 @@ import java.util.PriorityQueue;
 // May cause starvation
 public class SSTF implements SchedulingStrategy{
 
+    List<Integer> requestedFloors;
     // Bruteforce
-    public int selectNextFloor(int currentFloor, List<Integer> requestedFloors) {
+    public int selectNextFloor(int currentFloor) {
         if (!requestedFloors.isEmpty()) {
             int nearestFloor = requestedFloors.get(0);
             int minDistance = Math.abs(nearestFloor - currentFloor);
@@ -27,7 +28,7 @@ public class SSTF implements SchedulingStrategy{
 
     // Optimization, tradeoff: extra space(everytime create new Heap)
     public void requestFloor(int floor) {
-        requestedFloors.offer(floor);
+        requestedFloors.add(floor);
     }
 
     private int currentFloor;
@@ -39,9 +40,11 @@ public class SSTF implements SchedulingStrategy{
                 (a, b) -> Math.abs(a - currentFloor) - Math.abs(b - currentFloor)
         );
     }
+
+    @Override
     public void processRequests() {
         while (!requestedFloors.isEmpty()) {
-            int nextFloor = requestedFloors.poll();
+            int nextFloor = requestedFloors.remove();
             moveToFloor(nextFloor);
             currentFloor = nextFloor;
 

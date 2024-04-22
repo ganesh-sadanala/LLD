@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Admin extends Person{
     private String adminId;
 
@@ -10,11 +12,11 @@ public class Admin extends Person{
         return true;
     }
 
-    public boolean addShow(ShowTime show){
+    public boolean addShow(MovieShow show){
         return true;
     }
 
-    boolean updateShow(ShowTime show, int showId){
+    boolean updateShow(MovieShow show, int showId){
         return true;
     }
 
